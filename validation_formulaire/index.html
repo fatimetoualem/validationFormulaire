@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    
+    <div class="login-page">
+      <div class="bienvenue">
+        <i class="fa-solid fa-circle-check"></i>
+        <h2>Bienvenue l'artiste</h2>
+      </div>
+      <div class="form">
+        <form class="register-form">
+          <div class="champs">
+            <input type="text" placeholder="name" id="name"/>
+            <span class="msg-err-name">Le nom doit commencer par un lettre majuscule</span>
+          </div>
+          <div class="champs">
+            <input type="password" placeholder="password" id="password"/>
+            <span class="msg-err-password">Le mot de passe doit contient minimum 8 caractère, une majuscule, et un chiffre</span>
+          </div>
+         
+          <input type="text" placeholder="email address" id="email"/>
+          <span class="msg-err-mail">mail doit contient un "@", "."</span>
+         
+          <input type="button" value="CREATE"  class="button" onclick="submitUserInputs()" id="create"/>
+
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+        </form>
+
+
+        <form class="login-form">
+          <input type="text" placeholder="username"/>
+          <input type="password" placeholder="password"/>
+          <button>login</button>
+          <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="formulaire.js"></script>
+  </body>
+</html>
